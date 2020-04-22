@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item/>
+        <dependency_fields>name-22124,phone-22125</dependency_fields>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":26,"Bottom":26},"Orientation":"Vertical","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"ViewGroup","Margin":{},"CornerRadius":41,"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Image","Margin":{"Top":3,"Left":3,"Right":3,"Bottom":3},"Width":76,"studio_template_field_id":"E1","CornerRadius":38,"BackgroundColor":"#ffffff","Height":76,"Scaling":"Fit","Id":35102}],"BackgroundColor":"#165c53","Id":12259},{"Type":"Text","Margin":{"Top":9},"TextColor":"#165c53","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":22},"studio_template_field_id":"E2","CellId":"name","Id":22124},{"Type":"Text","Margin":{"Top":5},"Text":"PLACEHOLDER","studio_template_field_id":"E3","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":16},"CellId":"phone","Id":22125},{"Type":"Text","Margin":{"Top":5},"Text":"PLACEHOLDER","studio_template_field_id":"E4","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":22126}],"BackgroundColor":"#ffffff","studio_card_id":"8358f23023052300a8ed7f4fc7bf65b2","Id":28090}</item_view_json>
+        <name>Customer Header Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-11 20:59:57</sys_created_on>
+        <sys_id>378dbf8a1362b300ff87b1422244b032</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Customer Header Item View</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_item_view_378dbf8a1362b300ff87b1422244b032</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-15 09:51:02</sys_updated_on>
+        <table>x_snc_appeng_sales_customer</table>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=378dbf8a1362b300ff87b1422244b032"/>
+</record_update>

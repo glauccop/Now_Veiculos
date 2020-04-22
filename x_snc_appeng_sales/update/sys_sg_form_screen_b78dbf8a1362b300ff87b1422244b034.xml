@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <data_item/>
+        <description/>
+        <dynamic_prefetch_count/>
+        <fetch_type>not_required</fetch_type>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="Customer Icon">b38dbf8a1362b300ff87b1422244b030</icon>
+        <item_view display_value="Customer Header Item View">378dbf8a1362b300ff87b1422244b032</item_view>
+        <name>Customers</name>
+        <roles_override/>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-11 20:59:57</sys_created_on>
+        <sys_id>b78dbf8a1362b300ff87b1422244b034</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Customers</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_form_screen_b78dbf8a1362b300ff87b1422244b034</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-15 09:51:02</sys_updated_on>
+        <table>x_snc_appeng_sales_customer</table>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=b78dbf8a1362b300ff87b1422244b034"/>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_base">
+    <ml_capability_definition_base action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="NLU">b4ddf73453c73300d1dcddeeff7b1288</capability>
+        <current_solution_version>2</current_solution_version>
+        <dataset_language>en</dataset_language>
+        <fields/>
+        <filter/>
+        <solution_label>global_x_snc_appeng_sales_Vehicle_Search</solution_label>
+        <solution_name>ml_global_x_snc_appeng_sales_vehicle_search</solution_name>
+        <solution_parameters/>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-20 19:43:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8210dd16dbcb4c10cb9d53184b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global_x_snc_appeng_sales_Vehicle_Search</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>ml_capability_definition_base_8210dd16dbcb4c10cb9d53184b961969</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 19:43:05</sys_updated_on>
+        <table/>
+        <training_frequency>every_30_days</training_frequency>
+        <word_vector_corpus/>
+    </ml_capability_definition_base>
+</record_update>

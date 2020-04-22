@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <last_registered_on>2019-07-15 20:06:42</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>david.ha</sys_created_by>
+        <sys_created_on>2019-07-15 19:58:31</sys_created_on>
+        <sys_id>d7d514af13a2b700ff87b1422244b0f2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>5C7F247CA1DF1BD302E059F8DB6DEAD1755A61020F3462189761CDE75C53341A</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application Internal">b7e9f41477382300258da2e2c8106152</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_d7d514af13a2b700ff87b1422244b0f2</sys_update_name>
+        <sys_updated_by>david.ha</sys_updated_by>
+        <sys_updated_on>2019-07-16 00:06:32</sys_updated_on>
+        <sys_user_id display_value="">ea543fd31362b700ff87b1422244b0e7</sys_user_id>
+        <token>5C7F247CA1DF1BD302E059F8DB6DEAD1755A61020F3462189761CDE75C53341A</token>
+    </sys_push_notif_app_install>
+</record_update>

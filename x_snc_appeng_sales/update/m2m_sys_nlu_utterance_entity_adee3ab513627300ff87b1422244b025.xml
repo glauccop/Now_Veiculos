@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"indexes":[7],"annotatedString":"Do we have a 2017 red Honda {{phrase=\"Civic\"}}"}]</annotation>
+        <entity display_value="Model">3f649af513ae3300ff87b1422244b0b5</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 21:47:41</sys_created_on>
+        <sys_id>adee3ab513627300ff87b1422244b025</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Model.Do we have a 2017 red Honda Civic</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_adee3ab513627300ff87b1422244b025</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 21:47:41</sys_updated_on>
+        <utterance display_value="Do we have a 2017 red Honda Civic">c0def6b513627300ff87b1422244b01b</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_price" label="Price" language="en" table="var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_price</element>
+            <help/>
+            <hint/>
+            <label>Price</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0</name>
+            <plural>Price</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-18 21:14:23</sys_created_on>
+            <sys_id>2bf3c0e0137a7b00ff87b1422244b078</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Price</sys_name>
+            <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0_u_price_en</sys_update_name>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-18 21:14:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

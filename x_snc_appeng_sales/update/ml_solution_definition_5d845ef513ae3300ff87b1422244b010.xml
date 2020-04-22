@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_solution_definition">
+    <ml_solution_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability>nlu_trainer</capability>
+        <current_solution_version>3</current_solution_version>
+        <dataset_language/>
+        <fields_to_compare/>
+        <input_fields/>
+        <input_filter/>
+        <lookup_window_size>30</lookup_window_size>
+        <min_records>2</min_records>
+        <output_field/>
+        <prediction_input_fields/>
+        <segmentation_field/>
+        <similarity_window_filter/>
+        <solution_label>global_x_snc_appeng_sales_Vehicle_Search</solution_label>
+        <solution_name>ml_global_x_snc_appeng_sales_vehicle_search</solution_name>
+        <sys_class_name>ml_solution_definition</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 18:42:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5d845ef513ae3300ff87b1422244b010</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>global_x_snc_appeng_sales_Vehicle_Search</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>ml_solution_definition_5d845ef513ae3300ff87b1422244b010</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-21 11:08:11</sys_updated_on>
+        <table/>
+        <table_to_compare/>
+        <threshold>50</threshold>
+        <trainer display_value="NLU Template">3dd73663774233005d7b3882a9106128</trainer>
+        <training_frequency>every_30_days</training_frequency>
+        <update_frequency>do_not_update</update_frequency>
+        <use_segmentation>false</use_segmentation>
+        <word_vector_corpus/>
+    </ml_solution_definition>
+</record_update>

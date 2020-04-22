@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Customer Import" max_length="40" name="x_snc_appeng_sales_customer_mysql_db" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=birthdate" label="birthdate" max_length="40" name="u_birthdate" type="date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=credit" label="credit" max_length="40" name="u_credit" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=first_name" label="first_name" max_length="100" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=income" label="income" max_length="15" name="u_income" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=last_name" label="last_name" max_length="100" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=phone" label="phone" max_length="40" name="u_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=social" label="social" max_length="45" name="u_social" type="string"/>
+    </element>
+</database>

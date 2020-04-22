@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 16:44:47</sys_created_on>
+        <sys_id>6499b539132e3300ff87b1422244b09c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>now.workspace.app_engine_sales.purchase_automation___sales</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_security_acl display_value="now.workspace.app_engine_sales">5099b539132e3300ff87b1422244b093</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6499b539132e3300ff87b1422244b09c</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 16:44:47</sys_updated_on>
+        <sys_user_role display_value="purchase_automation___sales" name="purchase_automation___sales">6c99b539132e3300ff87b1422244b097</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

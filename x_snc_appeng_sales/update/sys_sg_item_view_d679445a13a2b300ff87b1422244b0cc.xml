@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item/>
+        <dependency_fields>state-11566,number-3907,vehicle.name-22124,customer-3092,vehicle.price-9764</dependency_fields>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":17,"Bottom":15},"Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Equal","Children":[{"Type":"ViewGroup","Margin":{"Right":12},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"Text","CornerRadius":2,"BackgroundColor":"#f1f1f1","Height":21,"Width":100,"Margin":{},"studio_template_field_id":"E1","Text":"","CellId":"state","TextColor":"#293e40","TextAlignment":"Center","MaxLines":1,"Font":{"Size":13,"Weight":"semibold"},"Id":11566}],"Id":42845},{"Type":"ViewGroup","Margin":{},"Orientation":"Vertical","Alignment":"Right","Distribution":"Auto","Children":[{"Type":"Text","Margin":{},"studio_template_field_id":"E2","Text":"","CellId":"number","TextColor":"#7d8a8c","TextAlignment":"Right","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":3907}],"Id":42846}],"Id":12259},{"Type":"Text","Margin":{"Top":9},"studio_template_field_id":"E3","Text":"","CellId":"vehicle.name","TextColor":"#293e40","TextAlignment":"Left","MaxLines":2,"Font":{"Weight":"regular","Size":18},"Id":22124},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"ViewGroup","Margin":{"Top":9},"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Text","Margin":{"Right":8},"studio_template_is_label":true,"studio_template_field_id":"E4","Text":"${customer}","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":3091},{"Type":"Text","Margin":{},"studio_template_field_id":"E4","Text":"","CellId":"customer","TextColor":"#293e40","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":3092}],"Id":34348},{"Type":"ViewGroup","Margin":{"Top":8},"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Text","Margin":{"Right":8},"studio_template_is_label":true,"studio_template_field_id":"E5","Text":"${vehicle.price}","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":9763},{"Type":"Text","Margin":{},"studio_template_field_id":"E5","Text":"","CellId":"vehicle.price","TextColor":"#293e40","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"Id":9764}],"Id":34349}],"Id":12261}],"studio_card_id":"b84a7b0d23012300a8ed7f4fc7bf6540","Id":28090}</item_view_json>
+        <name>Orders Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-11 21:51:59</sys_created_on>
+        <sys_id>d679445a13a2b300ff87b1422244b0cc</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Orders Item View</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_item_view_d679445a13a2b300ff87b1422244b0cc</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-17 23:08:26</sys_updated_on>
+        <table>x_snc_appeng_sales_order</table>
+        <ui_styles>a988b82f1326b700ff87b1422244b072,f058bc2f1326b700ff87b1422244b03b,a744530013b63b00ff87b1422244b0be</ui_styles>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=d679445a13a2b300ff87b1422244b0cc"/>
+</record_update>

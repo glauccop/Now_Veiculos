@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="purchase_automation___sales" name="purchase_automation___sales">6c99b539132e3300ff87b1422244b097</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 16:44:47</sys_created_on>
+        <sys_id>2c99b539132e3300ff87b1422244b09a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6c99b539132e3300ff87b1422244b097</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_embedded_help_role_2c99b539132e3300ff87b1422244b09a</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 16:44:47</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

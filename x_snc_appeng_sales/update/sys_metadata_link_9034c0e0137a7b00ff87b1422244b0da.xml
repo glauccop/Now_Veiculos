@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6004c0e0137a7b00ff87b1422244b0fa</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>67b38ca0137a7b00ff87b1422244b07d</answer>
+        <condition table="var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0">u_credit_score&gt;=550^u_price&lt;javascript:global.getCurrencyFilter('var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0','u_price', 'USD;20000')^EQ<item endquery="false" field="u_credit_score" goto="false" newquery="false" operator="&gt;=" or="false" value="550"/>
+            <item endquery="false" field="u_price" goto="false" newquery="false" operator="&lt;" or="false" value="javascript:global.getCurrencyFilter('var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0','u_price', 'USD;20000')"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Finance Decision Policy">18d3cca0137a7b00ff87b1422244b0c0</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_18d3cca0137a7b00ff87b1422244b0c0</input_table>
+        <label>Auto approve</label>
+        <order>100</order>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 21:15:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6004c0e0137a7b00ff87b1422244b0fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 21:15:15</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 21:15:15</sys_created_on>
+        <sys_id>9034c0e0137a7b00ff87b1422244b0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto approve</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_metadata_link_9034c0e0137a7b00ff87b1422244b0da</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 21:15:15</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

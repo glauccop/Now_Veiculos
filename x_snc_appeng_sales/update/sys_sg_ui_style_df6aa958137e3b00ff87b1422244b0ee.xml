@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_style">
+    <sys_sg_ui_style action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_appeng_sales_delivery_task">stateNOT IN3,4,7^EQ<item display_value="3,4,7" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="3,4,7"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <field>vehicle_order.number</field>
+        <item_vew/>
+        <item_view_element/>
+        <name>Delivery Task Number</name>
+        <style>{"background_color":"#00FF00","font_color":"#000000"}</style>
+        <sys_class_name>sys_sg_ui_style</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:03:26</sys_created_on>
+        <sys_id>df6aa958137e3b00ff87b1422244b0ee</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Delivery Task Number</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_ui_style_df6aa958137e3b00ff87b1422244b0ee</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:12:34</sys_updated_on>
+        <table>x_snc_appeng_sales_delivery_task</table>
+        <use_item_view_elements>false</use_item_view_elements>
+    </sys_sg_ui_style>
+</record_update>

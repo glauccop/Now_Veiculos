@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vehicle" max_length="40" name="x_snc_appeng_sales_vehicle" sizeclass="500" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Color" max_length="40" name="color" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Black" value="black"/>
+                <element inactive_on_update="false" label="Blue" value="blue"/>
+                <element inactive_on_update="false" label="Brown" value="brown"/>
+                <element inactive_on_update="false" label="Gray" value="gray"/>
+                <element inactive_on_update="false" label="Green" value="green"/>
+                <element inactive_on_update="false" label="Red" value="red"/>
+                <element inactive_on_update="false" label="Silver" value="silver"/>
+                <element inactive_on_update="false" label="White" value="white"/>
+                <element inactive_on_update="false" label="Yellow" value="yellow"/>
+            </choice>
+        </element>
+        <element default="Affordable, Excellent Condition. Crystal Black Pearl exterior and Parchment interior. Sunroof, Navigation, Heated Leather Seats, 3rd Row Seat, Power Liftgate, Rear Air, Alloy Wheels, All Wheel Drive, Non-Smoker vehicle.&#10;&#10;KEY FEATURES INCLUDE&#10;Leather Seats, Third Row Seat, Navigation, Sunroof, All Wheel Drive, Power Liftgate, Rear Air, Heated Driver Seat, Back-Up Camera, Satellite Radio, iPod/MP3 Input, CD Player, Onboard Communications System, Aluminum Wheels, Dual Zone A/C. Rear Spoiler, MP3 Player, Keyless Entry, Privacy Glass, Remote Trunk Release. Acura Technology Pkg with Crystal Black Pearl exterior and Parchment interior features a V6 Cylinder Engine with 300 HP at 6300 RPM*. Non-Smoker vehicle.&#10;&#10;EXPERTS ARE SAYING&#10;CarAndDriver.com's review says &quot;Already a class leader, Acura's sporty SUV flagship gets several updates for 2010, including freshened styling, engine refinements, a new transmission, and suspension upgrades.&quot;. 5 Star Driver Front Crash Rating. 5 Star Driver Side Crash Rating.&#10;&#10;BUY WITH CONFIDENCE&#10;3-month/3,000 Mile Limited Powertrain Warranty, 24/7 Roadside Assistance, Rental Coverage: up to 3 days at $30 per day not to exceed $90 per occurrence, Trip Interruption Service: hotel, transportation, meal reimbursement, Multi-point Vehicle Inspection; detail mechanical inspection, CARFAX Vehicle History Report" label="Features" max_length="1000" name="features" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="100" name="location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Make" max_length="40" name="make" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Price" max_length="20" name="price" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Year" max_length="40" name="year" type="string"/>
+    </element>
+</database>

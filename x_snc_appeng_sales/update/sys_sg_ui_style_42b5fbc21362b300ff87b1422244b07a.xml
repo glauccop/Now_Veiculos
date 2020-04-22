@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_style">
+    <sys_sg_ui_style action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_appeng_sales_vehicle">color=red^EQ<item display_value="Red" endquery="false" field="color" goto="false" newquery="false" operator="=" or="false" value="red"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <field>color</field>
+        <item_vew/>
+        <item_view_element/>
+        <name>Red</name>
+        <style>{"background_color":"#FF0000","font_color":"#000000"}</style>
+        <sys_class_name>sys_sg_ui_style</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-11 20:26:50</sys_created_on>
+        <sys_id>42b5fbc21362b300ff87b1422244b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Red</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_ui_style_42b5fbc21362b300ff87b1422244b07a</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-11 20:26:50</sys_updated_on>
+        <table>x_snc_appeng_sales_vehicle</table>
+        <use_item_view_elements>false</use_item_view_elements>
+    </sys_sg_ui_style>
+</record_update>

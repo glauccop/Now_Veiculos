@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Snc Appeng Sales Order" max_length="40" name="u_imp_tmpl_x_snc_appeng_sales_order" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Approval" label="Approval" max_length="40" name="u_approval" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Car" label="Car" max_length="40" name="u_car" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer" label="Customer" max_length="32" name="u_customer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Location" label="Location" max_length="32" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Order date" label="Order date" max_length="40" name="u_order_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

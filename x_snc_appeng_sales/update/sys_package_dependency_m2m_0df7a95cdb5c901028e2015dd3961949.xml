@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">9f9661942c1300100c1dbc48b5c9f520</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 18:18:50</sys_created_on>
+        <sys_id>0df7a95cdb5c901028e2015dd3961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 18:18:50</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

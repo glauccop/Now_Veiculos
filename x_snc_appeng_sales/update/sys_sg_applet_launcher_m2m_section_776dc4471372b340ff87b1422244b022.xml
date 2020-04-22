@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="Purchase Automation - Sales">8cd9f539132e3300ff87b1422244b00d</applet_launcher>
+        <order>40</order>
+        <section display_value="Business Trends">f76dc4471372b340ff87b1422244b01f</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>steven.jefferson</sys_created_by>
+        <sys_created_on>2019-07-26 16:20:26</sys_created_on>
+        <sys_id>776dc4471372b340ff87b1422244b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_776dc4471372b340ff87b1422244b022</sys_update_name>
+        <sys_updated_by>steven.jefferson</sys_updated_by>
+        <sys_updated_on>2019-07-26 16:20:26</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"indexes":[5],"annotatedString":"do we have a 2016 {{phrase=\"red\"}} honda accord","cat":"Red"}]</annotation>
+        <entity display_value="Color">34421e7513ae3300ff87b1422244b083</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 18:32:45</sys_created_on>
+        <sys_id>c6421e7513ae3300ff87b1422244b0a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Color.do we have a 2016 red honda accord</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_c6421e7513ae3300ff87b1422244b0a3</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 18:32:45</sys_updated_on>
+        <utterance display_value="do we have a 2016 red honda accord">47f1927513ae3300ff87b1422244b0f7</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

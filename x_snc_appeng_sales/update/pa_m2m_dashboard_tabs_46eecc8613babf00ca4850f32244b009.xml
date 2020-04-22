@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Auto Sales Board">37bec88613babf00ca4850f32244b0d5</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>steven.jefferson</sys_created_by>
+        <sys_created_on>2019-07-23 13:52:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46eecc8613babf00ca4850f32244b009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>37bec88613babf00ca4850f32244b0d5</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_46eecc8613babf00ca4850f32244b009</sys_update_name>
+        <sys_updated_by>steven.jefferson</sys_updated_by>
+        <sys_updated_on>2019-07-23 13:52:57</sys_updated_on>
+        <tab display_value="Sales Cycle">8aeecc8613babf00ca4850f32244b006</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

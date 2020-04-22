@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage display_value="mobilecheck2">9ea84bda13f23340ca4850f32244b0fc</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>steven.jefferson</sys_created_by>
+        <sys_created_on>2019-07-24 22:02:41</sys_created_on>
+        <sys_id>4b884f5a13f23340ca4850f32244b086</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Mobile Check 2</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sp_portal_4b884f5a13f23340ca4850f32244b086</sys_update_name>
+        <sys_updated_by>steven.jefferson</sys_updated_by>
+        <sys_updated_on>2019-07-24 22:04:04</sys_updated_on>
+        <theme/>
+        <title>Mobile Check 2</title>
+        <ts_index_group/>
+        <url_suffix>mc2</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=4b884f5a13f23340ca4850f32244b086"/>
+</record_update>

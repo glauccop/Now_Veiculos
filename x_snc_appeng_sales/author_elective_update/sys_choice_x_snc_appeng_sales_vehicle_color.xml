@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="color" table="x_snc_appeng_sales_vehicle" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Black</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a359b139132e3300ff87b1422244b05a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:37</sys_updated_on>
+            <value>black</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Blue</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2359b139132e3300ff87b1422244b051</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:40</sys_updated_on>
+            <value>blue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Brown</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a759b139132e3300ff87b1422244b05e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:45</sys_updated_on>
+            <value>brown</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gray</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2359b139132e3300ff87b1422244b058</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:48</sys_updated_on>
+            <value>gray</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Green</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2759b139132e3300ff87b1422244b05c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:51</sys_updated_on>
+            <value>green</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Red</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f59b139132e3300ff87b1422244b053</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:54</sys_updated_on>
+            <value>red</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Silver</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab59b139132e3300ff87b1422244b062</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:20:59</sys_updated_on>
+            <value>silver</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>White</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af59b139132e3300ff87b1422244b055</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:21:03</sys_updated_on>
+            <value>white</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>color</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yellow</label>
+            <language>en</language>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sequence/>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b59b139132e3300ff87b1422244b060</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 18:21:07</sys_updated_on>
+            <value>yellow</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>color</element>
+            <name>x_snc_appeng_sales_vehicle</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-10 16:43:54</sys_created_on>
+            <sys_id>ee08ed5cdb5c901028e2015dd3961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>color</sys_name>
+            <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+            <sys_update_name>sys_choice_x_snc_appeng_sales_vehicle_color</sys_update_name>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-10 16:43:54</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

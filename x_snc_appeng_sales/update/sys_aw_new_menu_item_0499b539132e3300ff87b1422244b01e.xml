@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_new_menu_item">
+    <sys_aw_new_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sys_class_name>sys_aw_new_menu_item</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 16:44:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0499b539132e3300ff87b1422244b01e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_appeng_sales_vehicle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_aw_new_menu_item_0499b539132e3300ff87b1422244b01e</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 16:44:45</sys_updated_on>
+        <table>x_snc_appeng_sales_vehicle</table>
+        <workspace_config display_value="Purchase Automation - Sales">e389b139132e3300ff87b1422244b070</workspace_config>
+    </sys_aw_new_menu_item>
+</record_update>

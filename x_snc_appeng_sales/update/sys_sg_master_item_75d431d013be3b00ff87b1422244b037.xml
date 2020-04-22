@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_snc_appeng_sales_customer</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="test">7dd431d013be3b00ff87b1422244b02f</embedded_screen>
+        <item_view display_value="test Item View">79d431d013be3b00ff87b1422244b024</item_view>
+        <name>test Master Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:48:56</sys_created_on>
+        <sys_id>75d431d013be3b00ff87b1422244b037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test Master Item</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_master_item_75d431d013be3b00ff87b1422244b037</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:48:56</sys_updated_on>
+    </sys_sg_master_item>
+</record_update>

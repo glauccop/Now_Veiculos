@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_snc_appeng_sales_delivery_task">x_snc_appeng_sales_delivery_task</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>VDEL</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 09:49:26</sys_created_on>
+        <sys_id>563761d4137e3b00ff87b1422244b082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VDEL</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_number_563761d4137e3b00ff87b1422244b082</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 09:49:26</sys_updated_on>
+    </sys_number>
+</record_update>

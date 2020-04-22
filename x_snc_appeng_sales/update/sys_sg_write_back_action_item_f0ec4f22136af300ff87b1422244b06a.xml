@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+	var gr = new GlideRecord('x_snc_appeng_sales_order');
+	gr.newRecord();
+	gr.setValue('customer', input.Customer);
+	//gr.setValue('vehicle', 'bc7f82f9136e3300ff87b1422244b0be');
+	gr.setValue('vehicle', input.Vehicle);
+	gr.setValue('');
+	gr.insert();
+	
+})(input);]]></execution_script>
+        <name>New (Order)</name>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-13 06:45:23</sys_created_on>
+        <sys_id>f0ec4f22136af300ff87b1422244b06a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>New (Order)</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_f0ec4f22136af300ff87b1422244b06a</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-27 14:59:50</sys_updated_on>
+        <table>x_snc_appeng_sales_order</table>
+        <template>vehicle={{Vehicle}}^customer={{Customer}}^order_date={{Order date}}^state=-5^location=db9a923c0a0a0a6501068d6eaec25ee0^EQ</template>
+        <type>new</type>
+        <use_current_record_as_condition>false</use_current_record_as_condition>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0ec4f22136af300ff87b1422244b06a"/>
+</record_update>

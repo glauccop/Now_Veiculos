@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">46ee488613babf00ca4850f32244b0d1</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_widget>
+        <posx>0</posx>
+        <posy>18</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>steven.jefferson</sys_created_by>
+        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+        <sys_id>cce7204313f2b340ff87b1422244b04b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>46ee488613babf00ca4850f32244b0d1</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_cce7204313f2b340ff87b1422244b04b</sys_update_name>
+        <sys_updated_by>steven.jefferson</sys_updated_by>
+        <sys_updated_on>2019-07-26 18:16:12</sys_updated_on>
+        <width>5</width>
+    </sys_grid_canvas_pane>
+</record_update>

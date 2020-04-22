@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <last_registered_on>2019-07-27 13:48:49</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-27 13:48:49</sys_created_on>
+        <sys_id>e0547c5b1372f340ff87b1422244b09f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>e8OJPwnLfaw:APA91bGNVnJZ6DHzlD1zSp71-NQqmWP1_ANPyBWF1QRrwQzPiTqXLwqOlazCLgYHBgxfKsrNnU82T9XI6e4WGUVl6zTMKE-sxRr2Nk4jAa-ljgzq5MeTEYG0TJ3ktN7O8VUesWM6vT2X</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application">05ed2fb177002300258da2e2c81061c2</sys_push_application_id>
+        <sys_push_platform_id display_value="Google">53e75f30ff0002009738ffffffffff12</sys_push_platform_id>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_e0547c5b1372f340ff87b1422244b09f</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-27 13:50:19</sys_updated_on>
+        <sys_user_id display_value="">292d017513aa3300ff87b1422244b043</sys_user_id>
+        <token>e8OJPwnLfaw:APA91bGNVnJZ6DHzlD1zSp71-NQqmWP1_ANPyBWF1QRrwQzPiTqXLwqOlazCLgYHBgxfKsrNnU82T9XI6e4WGUVl6zTMKE-sxRr2Nk4jAa-ljgzq5MeTEYG0TJ3ktN7O8VUesWM6vT2X</token>
+    </sys_push_notif_app_install>
+</record_update>

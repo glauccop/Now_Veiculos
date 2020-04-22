@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-orlando-12-11-2019__patch0-hotfix2-01-29-2020</compiler_build>
+        <copied_from>c92d570813b63b00ff87b1422244b02a</copied_from>
+        <copied_from_name>[Template] Process Order</copied_from_name>
+        <description>Template flow to copy to reset the Platform App Engine demo</description>
+        <internal_name>process_order</internal_name>
+        <label_cache>[{"name":"30e46720-518c-4eb0-91ca-0f3f12554eb8.table_name","label":"4➛Order Table","reference":"x_snc_appeng_sales_order","reference_display":"Order","type":"table_name","base_type":"table_name"},{"name":"30e46720-518c-4eb0-91ca-0f3f12554eb8.record","label":"4➛Order Record","reference":"x_snc_appeng_sales_order","reference_display":"Order","type":"reference","base_type":"reference"},{"name":"Created_1.current.customer","label":"Trigger➛Order Record➛Customer","reference":"x_snc_appeng_sales_customer","reference_display":"Customer","type":"reference","base_type":"reference","parent_table_name":"x_snc_appeng_sales_order","column_name":"customer"},{"name":"Created_1.current.vehicle","label":"Trigger➛Order Record➛Vehicle","reference":"x_snc_appeng_sales_vehicle","reference_display":"Vehicle","type":"reference","base_type":"reference","parent_table_name":"x_snc_appeng_sales_order","column_name":"vehicle"},{"name":"f5c546f3-e303-47a8-a357-5b0750d43ee1.table_name","label":"5➛Delivery Task Table","reference":"x_snc_appeng_sales_delivery_task","reference_display":"Delivery Task","type":"table_name","base_type":"table_name"},{"name":"f5c546f3-e303-47a8-a357-5b0750d43ee1.record","label":"5➛Delivery Task Record","reference":"x_snc_appeng_sales_delivery_task","reference_display":"Delivery Task","type":"reference","base_type":"reference"},{"name":"5a4707eb-9abc-42ed-8b7a-a878a492a138.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"Created_1.current.number","label":"Trigger➛Order Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_appeng_sales_order","column_name":"number"},{"name":"Created_1.current","label":"Trigger➛Order Record","reference":"x_snc_appeng_sales_order","reference_display":"Order","type":"reference","base_type":"reference"},{"name":"aca51af5-b04a-488d-b540-71ccbd9233d7.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"aca51af5-b04a-488d-b540-71ccbd9233d7.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"45240c10-031b-4531-bf9e-2244b18400e5.record","label":"1➛Order Record","reference":"x_snc_appeng_sales_order","reference_display":"Order","type":"reference","base_type":"reference"},{"name":"45240c10-031b-4531-bf9e-2244b18400e5.table_name","label":"1➛Order Table","reference":"x_snc_appeng_sales_order","reference_display":"Order","type":"table_name","base_type":"table_name"}]</label_cache>
+        <latest_snapshot>cd52c01edb0f0c10a7abb7bc299619cf</latest_snapshot>
+        <master_snapshot>bd02f51013be3b00ff87b1422244b091</master_snapshot>
+        <name>Process Order</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>0202391013be3b00ff87b1422244b005</remote_trigger_id>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6cf1751013be3b00ff87b1422244b0b9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Process Order</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_hub_flow_6cf1751013be3b00ff87b1422244b0b9</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:22</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6cf1751013be3b00ff87b1422244b0b9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6cf1751013be3b00ff87b1422244b0b9"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_appeng_sales_order">vehicleISNOTEMPTY^customerISNOTEMPTY^state=-5<item endquery="false" field="vehicle" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="customer" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item display_value="Pending" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0202391013be3b00ff87b1422244b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:40</sys_updated_on>
+        <table>x_snc_appeng_sales_order</table>
+    </sys_flow_record_trigger>
+    <sys_hub_flow_component action="delete_multiple" query="flow=6cf1751013be3b00ff87b1422244b0b9^sys_idNOT IN24f1751013be3b00ff87b1422244b0d0,2cf1751013be3b00ff87b1422244b0df,a0f1751013be3b00ff87b1422244b0e6,a4f1751013be3b00ff87b1422244b0d9,d4b8550f1376b340ff87b1422244b038"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Set state to Finance</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>24f1751013be3b00ff87b1422244b0d0</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>45240c10-031b-4531-bf9e-2244b18400e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=24f1751013be3b00ff87b1422244b0d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24f1751013be3b00ff87b1422244b0d0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>28f1751013be3b00ff87b1422244b0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24f1751013be3b00ff87b1422244b0d0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>60f1751013be3b00ff87b1422244b0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value>state=0</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24f1751013be3b00ff87b1422244b0d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>24f1751013be3b00ff87b1422244b0d0</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>24f1751013be3b00ff87b1422244b0d0</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>64f1751013be3b00ff87b1422244b0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>24f1751013be3b00ff87b1422244b0d0</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>ecf1751013be3b00ff87b1422244b0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>d3f92c160b10030085c083eb37673a7f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0df</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>65fe3ac0-762b-4913-9ea8-dfc143201f1b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2cf1751013be3b00ff87b1422244b0df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2cf1751013be3b00ff87b1422244b0df</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>state=1</value>
+        <variable display_value="">5ff92c160b10030085c083eb37673ac1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2cf1751013be3b00ff87b1422244b0df</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>ecf1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">1ff92c160b10030085c083eb37673a81</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2cf1751013be3b00ff87b1422244b0df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2cf1751013be3b00ff87b1422244b0df</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>24f1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2cf1751013be3b00ff87b1422244b0df</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>a8f1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2cf1751013be3b00ff87b1422244b0df</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>e4f1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>a0f1751013be3b00ff87b1422244b0e6</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>f5c546f3-e303-47a8-a357-5b0750d43ee1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a0f1751013be3b00ff87b1422244b0e6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0f1751013be3b00ff87b1422244b0e6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>7cf1751013be3b00ff87b1422244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>x_snc_appeng_sales_delivery_task</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a0f1751013be3b00ff87b1422244b0e6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a0f1751013be3b00ff87b1422244b0e6</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>38f1751013be3b00ff87b1422244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a0f1751013be3b00ff87b1422244b0e6</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>f8f1751013be3b00ff87b1422244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>vehicle={{Created_1.current.vehicle}}^customer={{Created_1.current.customer}}^assignment_group={"display":"Vehicle Delivery","value":"ff7fd110137e3b00ff87b1422244b018"}^vehicle_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment>Notify the Finance Department - this is how they take new requests today</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>a4f1751013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>5a4707eb-9abc-42ed-8b7a-a878a492a138</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a4f1751013be3b00ff87b1422244b0d9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4f1751013be3b00ff87b1422244b0d9</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>24f1751013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4f1751013be3b00ff87b1422244b0d9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>60f1751013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value>finance_requests@example.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a4f1751013be3b00ff87b1422244b0d9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a4f1751013be3b00ff87b1422244b0d9</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Vehicle:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;Trigger➛Order Record➛Vehicle➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Price:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;Trigger➛Order Record➛Vehicle➛Price&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Customer:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;Trigger➛Order Record➛Customer➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a4f1751013be3b00ff87b1422244b0d9</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>ecf1751013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>New Vehicle Order: {{Created_1.current.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a4f1751013be3b00ff87b1422244b0d9</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>68f1751013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Set state to Delivery</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>d4b8550f1376b340ff87b1422244b038</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>30e46720-518c-4eb0-91ca-0f3f12554eb8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d4b8550f1376b340ff87b1422244b038"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>10b8550f1376b340ff87b1422244b03a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>a5b8550f1376b340ff87b1422244b0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>d0b8550f1376b340ff87b1422244b03a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>e1b8550f1376b340ff87b1422244b0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d4b8550f1376b340ff87b1422244b038"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>d8b8550f1376b340ff87b1422244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{45240c10-031b-4531-bf9e-2244b18400e5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>adb8550f1376b340ff87b1422244b0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{45240c10-031b-4531-bf9e-2244b18400e5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>18b8550f1376b340ff87b1422244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>e9b8550f1376b340ff87b1422244b0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>9cb8550f1376b340ff87b1422244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>61b8550f1376b340ff87b1422244b0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6cf1751013be3b00ff87b1422244b0b9^sys_idNOT INf0f1751013be3b00ff87b1422244b0e8"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>f0f1751013be3b00ff87b1422244b0e8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:22</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f0f1751013be3b00ff87b1422244b0e8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f0f1751013be3b00ff87b1422244b0e8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>34f1751013be3b00ff87b1422244b0e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f0f1751013be3b00ff87b1422244b0e8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>70f1751013be3b00ff87b1422244b0e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>vehicleISNOTEMPTY^customerISNOTEMPTY^state=-5</value>
+        <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6cf1751013be3b00ff87b1422244b0b9^sys_idNOT IN68f1751013be3b00ff87b1422244b0ba"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6cf1751013be3b00ff87b1422244b0b9</id>
+        <name>Process Order</name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>68f1751013be3b00ff87b1422244b0ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=6cf1751013be3b00ff87b1422244b0b9^sys_idNOT IN2cf1751013be3b00ff87b1422244b0bf,a0f1751013be3b00ff87b1422244b0c6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</model>
+        <model_id>6cf1751013be3b00ff87b1422244b0b9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0bf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</model>
+        <model_id>6cf1751013be3b00ff87b1422244b0b9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>a0f1751013be3b00ff87b1422244b0c6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6cf1751013be3b00ff87b1422244b0b9^sys_idNOT IN24f1751013be3b00ff87b1422244b0d0,2cf1751013be3b00ff87b1422244b0df,a0f1751013be3b00ff87b1422244b0e6,a4f1751013be3b00ff87b1422244b0d9,d4b8550f1376b340ff87b1422244b038"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Set state to Finance</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>24f1751013be3b00ff87b1422244b0d0</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>45240c10-031b-4531-bf9e-2244b18400e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=24f1751013be3b00ff87b1422244b0d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24f1751013be3b00ff87b1422244b0d0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>28f1751013be3b00ff87b1422244b0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>24f1751013be3b00ff87b1422244b0d0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>60f1751013be3b00ff87b1422244b0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value>state=0</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24f1751013be3b00ff87b1422244b0d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>24f1751013be3b00ff87b1422244b0d0</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>24f1751013be3b00ff87b1422244b0d0</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>64f1751013be3b00ff87b1422244b0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>24f1751013be3b00ff87b1422244b0d0</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>ecf1751013be3b00ff87b1422244b0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>d3f92c160b10030085c083eb37673a7f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0df</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>65fe3ac0-762b-4913-9ea8-dfc143201f1b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2cf1751013be3b00ff87b1422244b0df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2cf1751013be3b00ff87b1422244b0df</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>state=1</value>
+        <variable display_value="">5ff92c160b10030085c083eb37673ac1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2cf1751013be3b00ff87b1422244b0df</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>ecf1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">1ff92c160b10030085c083eb37673a81</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2cf1751013be3b00ff87b1422244b0df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2cf1751013be3b00ff87b1422244b0df</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>24f1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2cf1751013be3b00ff87b1422244b0df</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>a8f1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2cf1751013be3b00ff87b1422244b0df</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>e4f1751013be3b00ff87b1422244b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>a0f1751013be3b00ff87b1422244b0e6</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>f5c546f3-e303-47a8-a357-5b0750d43ee1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a0f1751013be3b00ff87b1422244b0e6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a0f1751013be3b00ff87b1422244b0e6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>7cf1751013be3b00ff87b1422244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <value>x_snc_appeng_sales_delivery_task</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a0f1751013be3b00ff87b1422244b0e6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a0f1751013be3b00ff87b1422244b0e6</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>38f1751013be3b00ff87b1422244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a0f1751013be3b00ff87b1422244b0e6</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:18</sys_created_on>
+        <sys_id>f8f1751013be3b00ff87b1422244b0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>vehicle={{Created_1.current.vehicle}}^customer={{Created_1.current.customer}}^assignment_group={"display":"Vehicle Delivery","value":"ff7fd110137e3b00ff87b1422244b018"}^vehicle_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment>Notify the Finance Department - this is how they take new requests today</comment>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>a4f1751013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>5a4707eb-9abc-42ed-8b7a-a878a492a138</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a4f1751013be3b00ff87b1422244b0d9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4f1751013be3b00ff87b1422244b0d9</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>24f1751013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4f1751013be3b00ff87b1422244b0d9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>60f1751013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <value>finance_requests@example.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a4f1751013be3b00ff87b1422244b0d9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a4f1751013be3b00ff87b1422244b0d9</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>2cf1751013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Vehicle:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;Trigger➛Order Record➛Vehicle➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Price:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;Trigger➛Order Record➛Vehicle➛Price&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Customer:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;Trigger➛Order Record➛Customer➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a4f1751013be3b00ff87b1422244b0d9</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>ecf1751013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>New Vehicle Order: {{Created_1.current.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a4f1751013be3b00ff87b1422244b0d9</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>68f1751013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Set state to Delivery</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>d4b8550f1376b340ff87b1422244b038</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-20 14:03:22</sys_updated_on>
+        <ui_id>30e46720-518c-4eb0-91ca-0f3f12554eb8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d4b8550f1376b340ff87b1422244b038"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>10b8550f1376b340ff87b1422244b03a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>a5b8550f1376b340ff87b1422244b0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>d0b8550f1376b340ff87b1422244b03a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d4b8550f1376b340ff87b1422244b038</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>e1b8550f1376b340ff87b1422244b0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d4b8550f1376b340ff87b1422244b038"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>d8b8550f1376b340ff87b1422244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{45240c10-031b-4531-bf9e-2244b18400e5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>adb8550f1376b340ff87b1422244b0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{45240c10-031b-4531-bf9e-2244b18400e5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>18b8550f1376b340ff87b1422244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>e9b8550f1376b340ff87b1422244b0f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:14</sys_created_on>
+        <sys_id>9cb8550f1376b340ff87b1422244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d4b8550f1376b340ff87b1422244b038</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:19</sys_created_on>
+        <sys_id>61b8550f1376b340ff87b1422244b0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9^sys_idNOT IN68f1751013be3b00ff87b1422244b0ca,e0f1751013be3b00ff87b1422244b0c5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>68f1751013be3b00ff87b1422244b0ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9_table_name_en</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:17</sys_created_on>
+        <sys_id>e0f1751013be3b00ff87b1422244b0c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6cf1751013be3b00ff87b1422244b0b9_current_en</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6cf1751013be3b00ff87b1422244b0b9^sys_idNOT IN8a02391013be3b00ff87b1422244b005"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8a02391013be3b00ff87b1422244b005","name":"plan"}}</plan>
+        <plan_id>6cf1751013be3b00ff87b1422244b0b9</plan_id>
+        <snapshot>cd52c01edb0f0c10a7abb7bc299619cf</snapshot>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a02391013be3b00ff87b1422244b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:40</sys_updated_on>
+        <trigger display_value="">0202391013be3b00ff87b1422244b005</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Template flow to copy to reset the Platform App Engine demo</description>
+        <internal_name>process_order</internal_name>
+        <label_cache>[{"name":"Created_1.current.customer","label":"Trigger➛Order Record➛Customer","reference":"x_snc_appeng_sales_customer","reference_display":"Customer","type":"reference","base_type":"reference","parent_table_name":"x_snc_appeng_sales_order","column_name":"customer"},{"name":"Created_1.current.vehicle","label":"Trigger➛Order Record➛Vehicle","reference":"x_snc_appeng_sales_vehicle","reference_display":"Vehicle","type":"reference","base_type":"reference","parent_table_name":"x_snc_appeng_sales_order","column_name":"vehicle"},{"name":"f5c546f3-e303-47a8-a357-5b0750d43ee1.table_name","label":"4➛Delivery Task Table","reference":"x_snc_appeng_sales_delivery_task","reference_display":"Delivery Task","type":"table_name","base_type":"table_name"},{"name":"f5c546f3-e303-47a8-a357-5b0750d43ee1.record","label":"4➛Delivery Task Record","reference":"x_snc_appeng_sales_delivery_task","reference_display":"Delivery Task","type":"reference","base_type":"reference"},{"name":"5a4707eb-9abc-42ed-8b7a-a878a492a138.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"Created_1.current.number","label":"Trigger➛Order Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_appeng_sales_order","column_name":"number"},{"name":"Created_1.current","label":"Trigger➛Order Record","reference":"x_snc_appeng_sales_order","reference_display":"Order","type":"reference","base_type":"reference"},{"name":"aca51af5-b04a-488d-b540-71ccbd9233d7.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"aca51af5-b04a-488d-b540-71ccbd9233d7.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"45240c10-031b-4531-bf9e-2244b18400e5.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"45240c10-031b-4531-bf9e-2244b18400e5.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"}]</label_cache>
+        <master>true</master>
+        <name>Process Order</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Process Order">6cf1751013be3b00ff87b1422244b0b9</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bd02f51013be3b00ff87b1422244b091</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=bd02f51013be3b00ff87b1422244b091"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bd02f51013be3b00ff87b1422244b091"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=bd02f51013be3b00ff87b1422244b091^sys_idNOT IN4a02f51013be3b00ff87b1422244b0db,b502f51013be3b00ff87b1422244b0d3,b902f51013be3b00ff87b1422244b0d7,bdb8950f1376b340ff87b1422244b071,f502f51013be3b00ff87b1422244b0ce"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>02f0b88cc3c632002841b63b12d3aeff</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4a02f51013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>f5c546f3-e303-47a8-a357-5b0750d43ee1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a02f51013be3b00ff87b1422244b0db"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a02f51013be3b00ff87b1422244b0db</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4e02f51013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_delivery_task</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a02f51013be3b00ff87b1422244b0db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4a02f51013be3b00ff87b1422244b0db</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>0a02f51013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4a02f51013be3b00ff87b1422244b0db</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>ca02f51013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>vehicle={{Created_1.current.vehicle}}^customer={{Created_1.current.customer}}^assignment_group={"display":"Vehicle Delivery","value":"ff7fd110137e3b00ff87b1422244b018"}^vehicle_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify the Finance Department - this is how they take new requests today</comment>
+        <compiled_snapshot>98c181d20b100300d97d8bf637673ab5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>b502f51013be3b00ff87b1422244b0d3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>5a4707eb-9abc-42ed-8b7a-a878a492a138</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b502f51013be3b00ff87b1422244b0d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b502f51013be3b00ff87b1422244b0d3</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3d02f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b502f51013be3b00ff87b1422244b0d3</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>7902f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>finance_requests@example.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b502f51013be3b00ff87b1422244b0d3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>b502f51013be3b00ff87b1422244b0d3</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3502f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Vehicle:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;Trigger➛Order Record➛Vehicle➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Price:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;Trigger➛Order Record➛Vehicle➛Price&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Customer:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;Trigger➛Order Record➛Customer➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>b502f51013be3b00ff87b1422244b0d3</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f502f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>New Vehicle Order: {{Created_1.current.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>b502f51013be3b00ff87b1422244b0d3</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>7102f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment/>
+        <compiled_snapshot>8bb9a8160b10030085c083eb37673aec</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>b902f51013be3b00ff87b1422244b0d7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>65fe3ac0-762b-4913-9ea8-dfc143201f1b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b902f51013be3b00ff87b1422244b0d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b902f51013be3b00ff87b1422244b0d7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>8602f51013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">1ff92c160b10030085c083eb37673a81</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b902f51013be3b00ff87b1422244b0d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>c202f51013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>state=1</value>
+        <variable display_value="">5ff92c160b10030085c083eb37673ac1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b902f51013be3b00ff87b1422244b0d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b902f51013be3b00ff87b1422244b0d7</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f902f51013be3b00ff87b1422244b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b902f51013be3b00ff87b1422244b0d7</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4202f51013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b902f51013be3b00ff87b1422244b0d7</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>8e02f51013be3b00ff87b1422244b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Set state to Delivery</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>bdb8950f1376b340ff87b1422244b071</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>30e46720-518c-4eb0-91ca-0f3f12554eb8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bdb8950f1376b340ff87b1422244b071"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bdb8950f1376b340ff87b1422244b071</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>b9b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bdb8950f1376b340ff87b1422244b071</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>f5b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bdb8950f1376b340ff87b1422244b071"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>bdb8950f1376b340ff87b1422244b071</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>b1b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{45240c10-031b-4531-bf9e-2244b18400e5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>bdb8950f1376b340ff87b1422244b071</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>fdb8950f1376b340ff87b1422244b072</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>bdb8950f1376b340ff87b1422244b071</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>75b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Set state to Finance</comment>
+        <compiled_snapshot>baf174c8c3c232002841b63b12d3aee4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f502f51013be3b00ff87b1422244b0ce</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>45240c10-031b-4531-bf9e-2244b18400e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f502f51013be3b00ff87b1422244b0ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f502f51013be3b00ff87b1422244b0ce</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3102f51013be3b00ff87b1422244b0d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>state=0</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f502f51013be3b00ff87b1422244b0ce</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f102f51013be3b00ff87b1422244b0d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f502f51013be3b00ff87b1422244b0ce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f502f51013be3b00ff87b1422244b0ce</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f902f51013be3b00ff87b1422244b0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f502f51013be3b00ff87b1422244b0ce</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3902f51013be3b00ff87b1422244b0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>f502f51013be3b00ff87b1422244b0ce</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>bd02f51013be3b00ff87b1422244b0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=bd02f51013be3b00ff87b1422244b091^sys_idNOT IN4202f51013be3b00ff87b1422244b0dd"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4202f51013be3b00ff87b1422244b0dd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:22</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4202f51013be3b00ff87b1422244b0dd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4202f51013be3b00ff87b1422244b0dd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4602f51013be3b00ff87b1422244b0de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4202f51013be3b00ff87b1422244b0dd</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>8202f51013be3b00ff87b1422244b0de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>vehicleISNOTEMPTY^customerISNOTEMPTY^state=-5</value>
+        <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bd02f51013be3b00ff87b1422244b091^sys_idNOT IN3d02f51013be3b00ff87b1422244b092"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bd02f51013be3b00ff87b1422244b091</id>
+        <name>Process Order</name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3d02f51013be3b00ff87b1422244b092</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=bd02f51013be3b00ff87b1422244b091^sys_idNOT INbd02f51013be3b00ff87b1422244b0c2,f102f51013be3b00ff87b1422244b0a0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Process Order">bd02f51013be3b00ff87b1422244b091</model>
+        <model_id>bd02f51013be3b00ff87b1422244b091</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>bd02f51013be3b00ff87b1422244b0c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Process Order">bd02f51013be3b00ff87b1422244b091</model>
+        <model_id>bd02f51013be3b00ff87b1422244b091</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f102f51013be3b00ff87b1422244b0a0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=bd02f51013be3b00ff87b1422244b091^sys_idNOT IN4a02f51013be3b00ff87b1422244b0db,b502f51013be3b00ff87b1422244b0d3,b902f51013be3b00ff87b1422244b0d7,bdb8950f1376b340ff87b1422244b071,f502f51013be3b00ff87b1422244b0ce"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>02f0b88cc3c632002841b63b12d3aeff</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4a02f51013be3b00ff87b1422244b0db</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>f5c546f3-e303-47a8-a357-5b0750d43ee1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a02f51013be3b00ff87b1422244b0db"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a02f51013be3b00ff87b1422244b0db</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4e02f51013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_delivery_task</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a02f51013be3b00ff87b1422244b0db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4a02f51013be3b00ff87b1422244b0db</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>0a02f51013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4a02f51013be3b00ff87b1422244b0db</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>ca02f51013be3b00ff87b1422244b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>vehicle={{Created_1.current.vehicle}}^customer={{Created_1.current.customer}}^assignment_group={"display":"Vehicle Delivery","value":"ff7fd110137e3b00ff87b1422244b018"}^vehicle_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify the Finance Department - this is how they take new requests today</comment>
+        <compiled_snapshot>98c181d20b100300d97d8bf637673ab5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>b502f51013be3b00ff87b1422244b0d3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>5a4707eb-9abc-42ed-8b7a-a878a492a138</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b502f51013be3b00ff87b1422244b0d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b502f51013be3b00ff87b1422244b0d3</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3d02f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b502f51013be3b00ff87b1422244b0d3</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>7902f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>finance_requests@example.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b502f51013be3b00ff87b1422244b0d3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>b502f51013be3b00ff87b1422244b0d3</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3502f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Vehicle:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="e72b66a2-5196-4757-be14-e9a5ca18c69f" data-pillvalue="{{Created_1.current.vehicle.name}}"&gt;Trigger➛Order Record➛Vehicle➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Price:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="a0c3368a-5559-4669-8bcf-cf9a9504dbd7" data-pillvalue="{{Created_1.current.vehicle.price}}"&gt;Trigger➛Order Record➛Vehicle➛Price&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Customer:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="cf86dcd1-9a46-4ffd-9945-bc3751851316" data-pillvalue="{{Created_1.current.customer.name}}"&gt;Trigger➛Order Record➛Customer➛Name&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>b502f51013be3b00ff87b1422244b0d3</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f502f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>New Vehicle Order: {{Created_1.current.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>b502f51013be3b00ff87b1422244b0d3</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>7102f51013be3b00ff87b1422244b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment/>
+        <compiled_snapshot>8bb9a8160b10030085c083eb37673aec</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>b902f51013be3b00ff87b1422244b0d7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>65fe3ac0-762b-4913-9ea8-dfc143201f1b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b902f51013be3b00ff87b1422244b0d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b902f51013be3b00ff87b1422244b0d7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>8602f51013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">1ff92c160b10030085c083eb37673a81</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b902f51013be3b00ff87b1422244b0d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>c202f51013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>state=1</value>
+        <variable display_value="">5ff92c160b10030085c083eb37673ac1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b902f51013be3b00ff87b1422244b0d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b902f51013be3b00ff87b1422244b0d7</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f902f51013be3b00ff87b1422244b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b902f51013be3b00ff87b1422244b0d7</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>4202f51013be3b00ff87b1422244b0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b902f51013be3b00ff87b1422244b0d7</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>8e02f51013be3b00ff87b1422244b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Set state to Delivery</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>bdb8950f1376b340ff87b1422244b071</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>30e46720-518c-4eb0-91ca-0f3f12554eb8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bdb8950f1376b340ff87b1422244b071"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bdb8950f1376b340ff87b1422244b071</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>b9b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bdb8950f1376b340ff87b1422244b071</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>f5b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bdb8950f1376b340ff87b1422244b071"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>bdb8950f1376b340ff87b1422244b071</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>b1b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{45240c10-031b-4531-bf9e-2244b18400e5.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>bdb8950f1376b340ff87b1422244b071</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>fdb8950f1376b340ff87b1422244b072</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>bdb8950f1376b340ff87b1422244b071</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 21:49:21</sys_created_on>
+        <sys_id>75b8950f1376b340ff87b1422244b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Set state to Finance</comment>
+        <compiled_snapshot>baf174c8c3c232002841b63b12d3aee4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Order">bd02f51013be3b00ff87b1422244b091</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f502f51013be3b00ff87b1422244b0ce</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 21:49:21</sys_updated_on>
+        <ui_id>45240c10-031b-4531-bf9e-2244b18400e5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f502f51013be3b00ff87b1422244b0ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f502f51013be3b00ff87b1422244b0ce</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3102f51013be3b00ff87b1422244b0d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>state=0</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f502f51013be3b00ff87b1422244b0ce</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f102f51013be3b00ff87b1422244b0d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <value>x_snc_appeng_sales_order</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f502f51013be3b00ff87b1422244b0ce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f502f51013be3b00ff87b1422244b0ce</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>f902f51013be3b00ff87b1422244b0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f502f51013be3b00ff87b1422244b0ce</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3902f51013be3b00ff87b1422244b0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>f502f51013be3b00ff87b1422244b0ce</id>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>bd02f51013be3b00ff87b1422244b0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091^sys_idNOT IN3102f51013be3b00ff87b1422244b0c8,3502f51013be3b00ff87b1422244b0a5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3102f51013be3b00ff87b1422244b0c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091_table_name_en</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-18 10:36:39</sys_created_on>
+        <sys_id>3502f51013be3b00ff87b1422244b0a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_bd02f51013be3b00ff87b1422244b091_current_en</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-18 10:36:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

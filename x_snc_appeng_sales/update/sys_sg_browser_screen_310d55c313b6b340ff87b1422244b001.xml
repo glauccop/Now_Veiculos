@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_browser_screen">
+    <sys_sg_browser_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <description/>
+        <dynamic_prefetch_count/>
+        <external_browser>false</external_browser>
+        <fetch_type>not_required</fetch_type>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="Pre Transformation Icon">790d15c313b6b340ff87b1422244b0dd</icon>
+        <name>Pre Transformation</name>
+        <relative_url>true</relative_url>
+        <roles_override/>
+        <sys_class_name>sys_sg_browser_screen</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-26 22:08:18</sys_created_on>
+        <sys_id>310d55c313b6b340ff87b1422244b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pre Transformation</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_browser_screen_310d55c313b6b340ff87b1422244b001</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-26 22:08:18</sys_updated_on>
+        <url>/sp/?id=mobilecheck</url>
+    </sys_sg_browser_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=310d55c313b6b340ff87b1422244b001"/>
+</record_update>

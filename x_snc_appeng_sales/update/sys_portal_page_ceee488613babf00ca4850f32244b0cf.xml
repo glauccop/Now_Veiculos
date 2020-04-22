@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2020-04-22 13:53:51">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>steven.jefferson</sys_created_by>
+        <sys_created_on>2019-07-23 13:52:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ceee488613babf00ca4850f32244b0cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PA Sales Cycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_portal_page_ceee488613babf00ca4850f32244b0cf</sys_update_name>
+        <sys_updated_by>steven.jefferson</sys_updated_by>
+        <sys_updated_on>2019-07-24 17:12:14</sys_updated_on>
+        <title>PA Sales Cycle</title>
+        <user/>
+        <view>pa_new_tab_9</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Sales Cycle">ceee488613babf00ca4850f32244b0cf</page>
+                <summary>Sales Volume</summary>
+                <sys_created_by>steven.jefferson</sys_created_by>
+                <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                <sys_id>04e7204313f2b340ff87b1422244b04a</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>steven.jefferson</sys_updated_by>
+                <sys_updated_on>2019-07-26 18:16:39</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                        <sys_id>0ce7204313f2b340ff87b1422244b04a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:15:58</sys_updated_on>
+                        <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                        <sys_id>44e7204313f2b340ff87b1422244b04b</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:16:39</sys_updated_on>
+                        <value>Sales Volume</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_time</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                        <sys_id>80e7204313f2b340ff87b1422244b04b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:15:58</sys_updated_on>
+                        <value>0</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                        <sys_id>84e7204313f2b340ff87b1422244b04a</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:16:39</sys_updated_on>
+                        <value>4ef7e04313f2b340ff87b1422244b074</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                        <sys_id>88e7204313f2b340ff87b1422244b04b</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:16:39</sys_updated_on>
+                        <value>pa_widgets</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:58">04e7204313f2b340ff87b1422244b04a</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:58</sys_created_on>
+                        <sys_id>cce7204313f2b340ff87b1422244b04a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:15:58</sys_updated_on>
+                        <value>pa_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Sales Cycle">ceee488613babf00ca4850f32244b0cf</page>
+                <summary>CSAT</summary>
+                <sys_created_by>steven.jefferson</sys_created_by>
+                <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                <sys_id>627d126e13fe3340ca4850f32244b001</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>steven.jefferson</sys_updated_by>
+                <sys_updated_on>2019-07-25 13:33:36</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2019-07-25 06:32:49">627d126e13fe3340ca4850f32244b001</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                        <sys_id>267d126e13fe3340ca4850f32244b002</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-25 13:32:49</sys_updated_on>
+                        <value>pa_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2019-07-25 06:32:49">627d126e13fe3340ca4850f32244b001</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                        <sys_id>627d126e13fe3340ca4850f32244b002</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-25 13:32:49</sys_updated_on>
+                        <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2019-07-25 06:32:49">627d126e13fe3340ca4850f32244b001</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                        <sys_id>667d126e13fe3340ca4850f32244b003</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-25 13:33:36</sys_updated_on>
+                        <value>pa_widgets</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2019-07-25 06:32:49">627d126e13fe3340ca4850f32244b001</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                        <sys_id>aa7d126e13fe3340ca4850f32244b002</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-25 13:33:36</sys_updated_on>
+                        <value>CSAT</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2019-07-25 06:32:49">627d126e13fe3340ca4850f32244b001</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                        <sys_id>e67d126e13fe3340ca4850f32244b001</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-25 13:33:36</sys_updated_on>
+                        <value>908d126e13fe3340ca4850f32244b0b2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_time</name>
+                        <portal_section display_value="Created 2019-07-25 06:32:49">627d126e13fe3340ca4850f32244b001</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-25 13:32:49</sys_created_on>
+                        <sys_id>e67d126e13fe3340ca4850f32244b002</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-25 13:32:49</sys_updated_on>
+                        <value>0</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Sales Cycle">ceee488613babf00ca4850f32244b0cf</page>
+                <summary>Credit Score</summary>
+                <sys_created_by>steven.jefferson</sys_created_by>
+                <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                <sys_id>64d7ec0313f2b340ff87b1422244b036</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>steven.jefferson</sys_updated_by>
+                <sys_updated_on>2019-07-26 18:20:22</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_time</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:43">64d7ec0313f2b340ff87b1422244b036</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                        <sys_id>24d7204313f2b340ff87b1422244b03d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:15:43</sys_updated_on>
+                        <value>0</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:43">64d7ec0313f2b340ff87b1422244b036</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                        <sys_id>60d7204313f2b340ff87b1422244b03d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:15:43</sys_updated_on>
+                        <value>pa_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:43">64d7ec0313f2b340ff87b1422244b036</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                        <sys_id>a0d7204313f2b340ff87b1422244b03e</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:20:22</sys_updated_on>
+                        <value>pa_widgets</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:43">64d7ec0313f2b340ff87b1422244b036</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                        <sys_id>acd7204313f2b340ff87b1422244b03c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:15:43</sys_updated_on>
+                        <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:43">64d7ec0313f2b340ff87b1422244b036</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                        <sys_id>e4d7204313f2b340ff87b1422244b03d</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:20:22</sys_updated_on>
+                        <value>Credit Score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2019-07-26 11:15:43">64d7ec0313f2b340ff87b1422244b036</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-26 18:15:43</sys_created_on>
+                        <sys_id>ecd7ec0313f2b340ff87b1422244b036</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-26 18:20:22</sys_updated_on>
+                        <value>bcc8208313f2b340ff87b1422244b076</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Sales Cycle">ceee488613babf00ca4850f32244b0cf</page>
+                <summary>Sales Cycle Duration</summary>
+                <sys_created_by>steven.jefferson</sys_created_by>
+                <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                <sys_id>8a748e9a13feff00ca4850f32244b0cf</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>steven.jefferson</sys_updated_by>
+                <sys_updated_on>2019-07-24 17:06:34</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_time</name>
+                        <portal_section display_value="Created 2019-07-24 10:05:05">8a748e9a13feff00ca4850f32244b0cf</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                        <sys_id>06748e9a13feff00ca4850f32244b0d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-24 17:05:05</sys_updated_on>
+                        <value>0</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2019-07-24 10:05:05">8a748e9a13feff00ca4850f32244b0cf</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                        <sys_id>42748e9a13feff00ca4850f32244b0d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-24 17:05:05</sys_updated_on>
+                        <value>pa_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2019-07-24 10:05:05">8a748e9a13feff00ca4850f32244b0cf</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                        <sys_id>82748e9a13feff00ca4850f32244b0d0</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-24 17:06:34</sys_updated_on>
+                        <value>5b7486da13feff00ca4850f32244b0fc</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2019-07-24 10:05:05">8a748e9a13feff00ca4850f32244b0cf</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                        <sys_id>8e748e9a13feff00ca4850f32244b0d0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-24 17:05:05</sys_updated_on>
+                        <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2019-07-24 10:05:05">8a748e9a13feff00ca4850f32244b0cf</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                        <sys_id>c2748e9a13feff00ca4850f32244b0d2</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-24 17:06:34</sys_updated_on>
+                        <value>pa_widgets</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2019-07-24 10:05:05">8a748e9a13feff00ca4850f32244b0cf</portal_section>
+                        <sys_created_by>steven.jefferson</sys_created_by>
+                        <sys_created_on>2019-07-24 17:05:05</sys_created_on>
+                        <sys_id>c6748e9a13feff00ca4850f32244b0d1</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>steven.jefferson</sys_updated_by>
+                        <sys_updated_on>2019-07-24 17:06:34</sys_updated_on>
+                        <value>Sales Cycle Duration</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="Purchase Automation - Sales">8cd9f539132e3300ff87b1422244b00d</applet_launcher>
+        <order>20</order>
+        <section display_value="Customers">adad738a1362b300ff87b1422244b05e</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-11 21:00:19</sys_created_on>
+        <sys_id>a5ad33ca1362b300ff87b1422244b01a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_a5ad33ca1362b300ff87b1422244b01a</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-12 00:44:14</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

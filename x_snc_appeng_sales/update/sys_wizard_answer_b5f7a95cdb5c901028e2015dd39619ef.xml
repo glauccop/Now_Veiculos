@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Delivery Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Delivery Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">97a6a9942c1300100c1dbc48b5c9f55a</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 19:38:01</sys_created_on>
+        <sys_id>b5f7a95cdb5c901028e2015dd39619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delivery Task</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>sys_wizard_answer_b5f7a95cdb5c901028e2015dd39619ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 19:38:01</sys_updated_on>
+        <table/>
+        <target_url>x_snc_appeng_sales_delivery_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

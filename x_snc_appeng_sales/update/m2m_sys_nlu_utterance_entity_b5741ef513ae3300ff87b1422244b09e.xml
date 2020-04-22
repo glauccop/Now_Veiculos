@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"indexes":[5],"annotatedString":"find a 2016 blue honda {{phrase=\"civic\"}}"}]</annotation>
+        <entity display_value="Model">3f649af513ae3300ff87b1422244b0b5</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>jimmy.yuan</sys_created_by>
+        <sys_created_on>2019-07-10 18:42:18</sys_created_on>
+        <sys_id>b5741ef513ae3300ff87b1422244b09e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Model.find a 2016 blue honda civic</sys_name>
+        <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_b5741ef513ae3300ff87b1422244b09e</sys_update_name>
+        <sys_updated_by>jimmy.yuan</sys_updated_by>
+        <sys_updated_on>2019-07-10 18:42:18</sys_updated_on>
+        <utterance display_value="find a 2016 blue honda civic">a191127513ae3300ff87b1422244b0e2</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

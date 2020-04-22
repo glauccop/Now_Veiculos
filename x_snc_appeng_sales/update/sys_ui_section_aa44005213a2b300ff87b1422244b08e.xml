@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="aa44005213a2b300ff87b1422244b08e" sys_domain="global" table="u_imp_tmpl_x_snc_appeng_sales_order" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>ea44005213a2b300ff87b1422244b08f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_order_date</element>
+            <position>1</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>6e44005213a2b300ff87b1422244b08f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_customer</element>
+            <position>2</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>ee44005213a2b300ff87b1422244b08f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_approval</element>
+            <position>3</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>6244005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>e244005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_state</element>
+            <position>5</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>6644005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_location</element>
+            <position>6</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>e644005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_car</element>
+            <position>7</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>6a44005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>ea44005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template_import_log.message</element>
+            <position>9</position>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_id>6e44005213a2b300ff87b1422244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_imp_tmpl_x_snc_appeng_sales_order" sys_domain="global" view="Default view">aa44005213a2b300ff87b1422244b08e</sys_ui_section>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_imp_tmpl_x_snc_appeng_sales_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jimmy.yuan</sys_created_by>
+            <sys_created_on>2019-07-11 21:29:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa44005213a2b300ff87b1422244b08e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_imp_tmpl_x_snc_appeng_sales_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Purchase Automation - Sales" source="x_snc_appeng_sales">a848f1f5132e3300ff87b1422244b028</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Purchase Automation - Sales">a848f1f5132e3300ff87b1422244b028</sys_scope>
+            <sys_update_name>sys_ui_section_aa44005213a2b300ff87b1422244b08e</sys_update_name>
+            <sys_updated_by>jimmy.yuan</sys_updated_by>
+            <sys_updated_on>2019-07-11 21:29:21</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
